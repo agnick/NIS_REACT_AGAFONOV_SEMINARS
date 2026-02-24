@@ -54,9 +54,7 @@ const AxiosDemo: React.FC = () => {
           Отменить загрузку
         </button>
       </div>
-      {status.text && (
-        <p className={`status status-${status.type}`}>Статус: {status.text}</p>
-      )}
+      {status.text && <p className={`status status-${status.type}`}>Статус: {status.text}</p>}
       {users.length > 0 && (
         <ul className="user-list">
           {users.map((user) => (
